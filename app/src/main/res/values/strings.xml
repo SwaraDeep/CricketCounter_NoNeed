@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="name1">Team A</string>
+    <string name="name2">Team B</string>
+    <string name="onepoint">+1 Point</string>
+    <string name="twopoint">+2 Points</string>
+    <string name="fourpoint">+4 Points</string>
+    <string name="sixpoint">+6 Points</string>
+    <string name="wicket">wicket</string>
+    <string name="slash">/</string>
+    <string name="reset">reset</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/teama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:text="@string/name1"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/scorea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teama"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scoreone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/wicketone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="45sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/onepoint"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/scorea"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:onClick="onePointA"
+                android:text="@string/onepoint" />
+
+            <Button
+                android:id="@+id/twopoint"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/onepoint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="twoPointA"
+                android:text="@string/twopoint" />
+
+            <Button
+                android:id="@+id/fourpoint"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/twopoint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="fourPointA"
+                android:text="@string/fourpoint" />
+
+            <Button
+                android:id="@+id/sixpoint"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/fourpoint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="sixPointA"
+                android:text="@string/sixpoint" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/sixpoint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="wicketsA"
+                android:text="@string/wicket" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/teamb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:text="@string/name2"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/scoreb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamb"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scoreoneb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/slashb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/wicketoneb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="45sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/onepointb"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/scoreb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:onClick="onePointB"
+                android:text="@string/onepoint" />
+
+            <Button
+                android:id="@+id/twopointb"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/onepointb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="twoPointB"
+                android:text="@string/twopoint" />
+
+            <Button
+                android:id="@+id/fourpointb"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/twopointb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="fourPointB"
+                android:text="@string/fourpoint" />
+
+            <Button
+                android:id="@+id/sixpointb"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/fourpointb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="sixPointB"
+                android:text="@string/sixpoint" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/sixpointb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:onClick="wicketsB"
+                android:text="@string/wicket" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scores">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:onClick="reset"
+            android:text="@string/reset" />
+    </RelativeLayout>
+</RelativeLayout>
